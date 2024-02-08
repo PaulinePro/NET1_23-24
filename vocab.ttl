@@ -4,24 +4,45 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix MUSEE: <https://jardindesconnaissances.univ-paris8.fr/onto/MUSEE#> .
+@prefix MUSEE: <https://jardindesconnaissances.univ-paris8.fr/onto/musee> .
 @prefix teach: <http://linkedscience.org/teach/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
 
-<https://jardindesconnaissances.univ-paris8.fr/onto/MUSEE> a owl:Ontology ; 
+<https://jardindesconnaissances.univ-paris8.fr/onto/musee> a owl:Ontology ; 
   dcterms:title "MUSEE NUMERIQUE".
-#créer les class nécessaire avac le modèle : [le prefix que vous avez défini]:[le code de la class que vous avez défini] a rdfs:Class ; rdfs:label "[le nom de la class que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
-#créer les propriété suivant le modèle : [le prefix que vous avez défini]:[le code de la propriété que vous avez défini] a rdf:Property ; rdfs:label "[le nom de la propriété que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
+
+#créer les class nécessaire avac le modèle : 
+#[le prefix que vous avez défini]:[le code de la class que vous avez défini] a rdfs:Class ;
+#rdfs:label "[le nom de la class que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
+
+#créer les propriété suivant le modèle : [le prefix que vous avez défini]:[le code de la propriété que vous avez défini] a rdf:Property ; 
+#rdfs:label "[le nom de la propriété que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
 #definnir des classes
 
-MUSEE:classhehe a rdfs:Class ; 
+MUSEE:museephysique a rdfs:Class ; 
+rdfs:label "Le Musee physique" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+      MUSEE:localisation a rdf:Property ; 
+      rdfs:label "Adresse" ; 
+      rdfs:domain o:Resource ; 
+      vs:term_status "experimental" .
+
+MUSEE:art a rdfs:Class ; 
 rdfs:label "nom de la class" ; 
 rdfs:domain o:Resource ; 
 vs:term_status "experimental" .
 
-#definnir des proprietes
-MUSEE:Proprietehehe a rdf:Property ; 
-rdfs:label "le nom de la propriete" ; 
-rdfs:domain o:Resource ; 
-vs:term_status "experimental" .
+  MUSEE:oeuvres a rdfs:Class ; 
+  rdfs:label "les oeuvres" ; 
+  rdfs:domain o:Resource ; 
+  vs:term_status "experimental" .
+
+    MUSEE:nom a rdf:Property ; 
+    rdfs:label "le nom de l'oeuvre" ; 
+    rdfs:domain o:Resource ; 
+    vs:term_status "experimental" .
+
+
