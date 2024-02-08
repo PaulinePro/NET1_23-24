@@ -11,12 +11,16 @@
 
 <https://jardindesconnaissances.univ-paris8.fr/onto/MUSEE> a owl:Ontology ; 
   dcterms:title "MUSEE NUMERIQUE".
+#créer les class nécessaire avac le modèle : [le prefix que vous avez défini]:[le code de la class que vous avez défini] a rdfs:Class ; rdfs:label "[le nom de la class que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
+#créer les propriété suivant le modèle : [le prefix que vous avez défini]:[le code de la propriété que vous avez défini] a rdf:Property ; rdfs:label "[le nom de la propriété que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
+#definnir des classes
 
 MUSEE:classhehe a rdfs:Class ; 
-rdfs:label "[PROJET]" ; 
+rdfs:label "nom de la class" ; 
 rdfs:domain o:Resource ; 
 vs:term_status "experimental" .
 
+#definnir des proprietes
 MUSEE:Proprietehehe a rdf:Property ; 
 rdfs:label "le nom de la propriete" ; 
 rdfs:domain o:Resource ; 
