@@ -21,9 +21,13 @@
 #definnir des classes
 
 jdr:type a rdfs:Class ; 
-rdfs:label "jdrclass" ; 
+rdfs:label "type de jdr" ; 
 rdfs:domain o:Resource ; 
 vs:term_status "experimental" .
+      jdr:type a rdf:Property ; 
+      rdfs:label "type" ; 
+      rdfs:domain o:Resource ; 
+      vs:term_status "experimental" .
 
       jdr:humain a rdf:Property ; 
       rdfs:label "Humain" ; 
