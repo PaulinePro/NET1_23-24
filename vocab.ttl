@@ -4,13 +4,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix MUSEE: <https://jardindesconnaissances.univ-paris8.fr/onto/musee> .
+@prefix MUSEE: <https://jardindesconnaissances.univ-paris8.fr/onto/jdr> .
 @prefix teach: <http://linkedscience.org/teach/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
 
-<https://jardindesconnaissances.univ-paris8.fr/onto/musee> a owl:Ontology ; 
-  dcterms:title "MUSEE NUMERIQUE".
+<https://jardindesconnaissances.univ-paris8.fr/onto/jdr> a owl:Ontology ; 
+  dcterms:title "JDR Pauline".
 
 #créer les class nécessaire avac le modèle : 
 #[le prefix que vous avez défini]:[le code de la class que vous avez défini] a rdfs:Class ;
@@ -20,29 +20,72 @@
 #rdfs:label "[le nom de la propriété que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
 #definnir des classes
 
-MUSEE:museephysique a rdfs:Class ; 
-rdfs:label "Le Musee physique" ; 
+jdr:type a rdfs:Class ; 
+rdfs:label "jdrclass" ; 
 rdfs:domain o:Resource ; 
 vs:term_status "experimental" .
 
-      MUSEE:localisation a rdf:Property ; 
-      rdfs:label "Adresse" ; 
+      jdr:humain a rdf:Property ; 
+      rdfs:label "Humain" ; 
       rdfs:domain o:Resource ; 
       vs:term_status "experimental" .
+          jdr:humainclass a rdfs:Class ; 
+          rdfs:label "Humainclass" ; 
+          rdfs:domain o:Resource ; 
+          vs:term_status "experimental" .
+      jdr:creature a rdf:Property ; 
+      rdfs:label "creature" ; 
+      rdfs:domain o:Resource ; 
+      vs:term_status "experimental" .
+          jdr:creatureclass a rdfs:Class ; 
+          rdfs:label "creatureclass" ; 
+          rdfs:domain o:Resource ; 
+          vs:term_status "experimental" .
 
-MUSEE:art a rdfs:Class ; 
-rdfs:label "nom de la class" ; 
+jdr:taille a rdf:Property ; 
+rdfs:label "taille" ; 
 rdfs:domain o:Resource ; 
 vs:term_status "experimental" .
 
-  MUSEE:oeuvres a rdfs:Class ; 
-  rdfs:label "les oeuvres" ; 
-  rdfs:domain o:Resource ; 
-  vs:term_status "experimental" .
+jdr:age a rdf:Property ; 
+rdfs:label "age" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
 
-    MUSEE:nom a rdf:Property ; 
-    rdfs:label "le nom de l'oeuvre" ; 
-    rdfs:domain o:Resource ; 
-    vs:term_status "experimental" .
+jdr:joueur a rdf:Property ; 
+rdfs:label "joueur.euse" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:temps a rdf:Property ; 
+rdfs:label "temps" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:caractere a rdf:Property ; 
+rdfs:label "caractere" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:histoire a rdf:Property ; 
+rdfs:label "histoire" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:histoire a rdf:Property ; 
+rdfs:label "histoire" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:competence a rdf:Property ; 
+rdfs:label "competence" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:faiblesse a rdf:Property ; 
+rdfs:label "faiblesse" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
 
 
