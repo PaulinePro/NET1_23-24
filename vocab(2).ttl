@@ -1,0 +1,173 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix jdr: <https://jardindesconnaissances.univ-paris8.fr/onto/jdr#> .
+@prefix teach: <http://linkedscience.org/teach/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+
+<https://jardindesconnaissances.univ-paris8.fr/onto/jdr> a owl:Ontology ; 
+  dcterms:title "JDR Pauline".
+
+#créer les class nécessaire avac le modèle : 
+#[le prefix que vous avez défini]:[le code de la class que vous avez défini] a rdfs:Class ;
+#rdfs:label "[le nom de la class que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
+
+#créer les propriété suivant le modèle : [le prefix que vous avez défini]:[le code de la propriété que vous avez défini] a rdf:Property ; 
+#rdfs:label "[le nom de la propriété que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
+#definnir des classes
+
+jdr:type a rdfs:Class ; 
+rdfs:label "type de jdr" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+      jdr:type a rdf:Property ; 
+      rdfs:label "type" ; 
+      rdfs:domain o:Resource ; 
+      vs:term_status "experimental" .
+
+      jdr:humain a rdf:Property ; 
+      rdfs:label "Humain" ; 
+      rdfs:domain o:Resource ; 
+      vs:term_status "experimental" .
+          jdr:humainclass a rdfs:Class ; 
+          rdfs:label "Humainclass" ; 
+          rdfs:domain o:Resource ; 
+          vs:term_status "experimental" .
+      jdr:creature a rdf:Property ; 
+      rdfs:label "creature" ; 
+      rdfs:domain o:Resource ; 
+      vs:term_status "experimental" .
+          jdr:creatureclass a rdfs:Class ; 
+          rdfs:label "creatureclass" ; 
+          rdfs:domain o:Resource ; 
+          vs:term_status "experimental" .
+
+
+jdr:scenario a rdfs:Class ;
+    rdfs:label "Scénario de jeu de rôle" ;
+    rdfs:subClassOf o:Resource ;
+    vs:term_status "experimental" .
+
+jdr:monde a rdfs:Class ;
+    rdfs:label "Monde de jeu de rôle" ;
+    rdfs:subClassOf o:Resource ;
+    vs:term_status "experimental" .
+
+jdr:événement a rdfs:Class ;
+    rdfs:label "Événement de jeu de rôle" ;
+    rdfs:subClassOf o:Resource ;
+    vs:term_status "experimental" .
+
+jdr:objets a rdfs:Class ;
+    rdfs:label "Objet de jeu de rôle" ;
+    rdfs:subClassOf o:Resource ;
+    vs:term_status "experimental" .
+
+jdr:titre a rdf:Property ;
+    rdfs:label "titre" ;
+    rdfs:domain jdr:scenario ;
+    vs:term_status "experimental" .
+
+
+jdr:niveau_recommandé a rdf:Property ;
+    rdfs:label "niveau recommandé" ;
+    rdfs:domain jdr:scenario ;
+    vs:term_status "experimental" .
+
+jdr:durée_estimée a rdf:Property ;
+    rdfs:label "durée estimée" ;
+    rdfs:domain jdr:scenario ;
+    vs:term_status "experimental" .
+
+jdr:nom_du_monde a rdf:Property ;
+    rdfs:label "nom du monde" ;
+    rdfs:domain jdr:monde ;
+    vs:term_status "experimental" .
+
+jdr:règles_spécifiques a rdf:Property ;
+    rdfs:label "règles spécifiques" ;
+    rdfs:domain jdr:monde ;
+    vs:term_status "experimental" .
+
+jdr:nom_de_événement a rdf:Property ;
+    rdfs:label "nom de l'événement" ;
+    rdfs:domain jdr:événement ;
+    vs:term_status "experimental" .
+
+jdr:date a rdf:Property ;
+    rdfs:label "date" ;
+    rdfs:domain jdr:événement ;
+    vs:term_status "experimental" .
+
+jdr:lieu a rdf:Property ;
+    rdfs:label "lieu" ;
+    rdfs:domain jdr:événement ;
+    vs:term_status "experimental" .
+
+jdr:nom_de_objet a rdf:Property ;
+    rdfs:label "nom de objet" ;
+    rdfs:domain jdr:objets ;
+    vs:term_status "experimental" .
+
+jdr:utilité a rdf:Property ;
+    rdfs:label "utilité" ;
+    rdfs:domain jdr:objets ;
+    vs:term_status "experimental" .
+
+jdr:rareté a rdf:Property ;
+    rdfs:label "rareté" ;
+    rdfs:domain jdr:objets ;
+    vs:term_status "experimental" .
+
+
+jdr:taille a rdf:Property ; 
+rdfs:label "taille" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:age a rdf:Property ; 
+rdfs:label "age" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:joueur a rdf:Property ; 
+rdfs:label "joueur.euse" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:temps a rdf:Property ; 
+rdfs:label "temps" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:caractere a rdf:Property ; 
+rdfs:label "caractere" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:histoire a rdf:Property ; 
+rdfs:label "histoire" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:histoire a rdf:Property ; 
+rdfs:label "histoire" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:competence a rdf:Property ; 
+rdfs:label "competence" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+jdr:faiblesse a rdf:Property ; 
+rdfs:label "faiblesse" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
+
+
