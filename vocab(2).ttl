@@ -20,6 +20,11 @@
 #rdfs:label "[le nom de la propriété que vous avez défini]" ; rdfs:domain o:Resource ; vs:term_status "experimental" .
 #definnir des classes
 
+jdr:personnage a rdfs:Class ; 
+rdfs:label "personnage" ; 
+rdfs:domain o:Resource ; 
+vs:term_status "experimental" .
+
 jdr:type a rdfs:Class ; 
 rdfs:label "type de jdr" ; 
 rdfs:domain o:Resource ; 
