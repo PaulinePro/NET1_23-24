@@ -47,7 +47,6 @@ vs:term_status "experimental" .
           vs:term_status "experimental" .
 
 
-# Classes
 jdr:scenario a rdfs:Class ;
     rdfs:label "Scénario de jeu de rôle" ;
     rdfs:subClassOf o:Resource ;
@@ -68,16 +67,11 @@ jdr:objets a rdfs:Class ;
     rdfs:subClassOf o:Resource ;
     vs:term_status "experimental" .
 
-# Propriétés
 jdr:titre a rdf:Property ;
     rdfs:label "titre" ;
     rdfs:domain jdr:scenario ;
     vs:term_status "experimental" .
 
-jdr:description a rdf:Property ;
-    rdfs:label "description" ;
-    rdfs:domain [ jdr:scenario, jdr:monde, jdr:événement, jdr:objets ] ;
-    vs:term_status "experimental" .
 
 jdr:niveau_recommandé a rdf:Property ;
     rdfs:label "niveau recommandé" ;
