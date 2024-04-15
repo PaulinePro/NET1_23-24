@@ -32,11 +32,16 @@ J'ai utilisé les ressources template pour faciliter la création d'items dans O
 
 - **Template pour les Personnages :** 
   - Champ pour le nom, l'âge, la race, la classe, les compétences, les faiblesses, etc.
+    lien : https://net-24.jardindesconnaissances.fr/admin/resource-template/77 
 - **Template pour les Scénarios :** 
   - Champ pour le titre, la description, les objectifs, les personnages impliqués, etc.
+    lien : https://net-24.jardindesconnaissances.fr/admin/resource-template/81 
 - **Items :**
   - Exemple de Personnage : Pierre l'Elfe et Robert le Nain
+    lien Pierre : https://net-24.jardindesconnaissances.fr/admin/item/405
+    lien Robert : https://net-24.jardindesconnaissances.fr/admin/item/404 
   - Exemple de Scénario : "Les Mystères des Alpes"
+    lien : http://net-24.jardindesconnaissances.fr/admin/item/406 
 
 Grâce à ces ressources template et items, j'ai pu organiser mes données de jeu de rôle de manière cohérente et structurée dans Omeka. Cela facilite la gestion et la présentation de mon projet.
 
